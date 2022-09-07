@@ -20,11 +20,18 @@
     <br><br>
     <form action="post.php" method="get">
         <ul>
-            <li><a href="post.php?id=1">กระทู้ที่ 1</li></a>
+            <?php 
+                for($i=1; $i<=10; $i++) echo "<li><a href= post.php?id=$i > กระทู้ที่ $i </li></a>";                   
+            ?>
+
+
+            <!-- <li><a href="post.php?id=1">กระทู้ที่ 1</li></a>
             <li><a href="post.php?id=2">กระทู้ที่ 2</li></a>
             <li><a href="post.php?id=3">กระทู้ที่ 3</li></a>
             <li><a href="post.php?id=4">กระทู้ที่ 4</li></a>
-            <li><a href="post.php?id=5">กระทู้ที่ 5</li></a>
+            <li><a href="post.php?id=5">กระทู้ที่ 5</li></a> -->
+
+
         </ul>
     </form>
 </body>

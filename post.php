@@ -9,7 +9,15 @@
 <body>
     <h1 align = "center" >Webboard KodInw</h1>
     
-            <center><?php echo "ต้องการดูกระทู้หมายเลข $_GET[id] "?></center><br>
+            <center><?php 
+
+                            $i = $_GET["id"];
+
+                            if($i%2 == 0) echo "ต้องการดูกระทู้หมายเลข $_GET[id] " . "<BR>"."เป็นกระทู้หมายเลขคู่";
+
+                            else echo"ต้องการดูกระทู้หมายเลข $_GET[id] " . "<BR>"."เป็นกระทู้หมายเลขคี่";
+
+                    ?></center><br>
 
         <div align = "center">
             <table style="border: 2px solid black; width: 40px;" align="center">
