@@ -10,21 +10,29 @@
 <body>
     <h1><center>Webboard KodInw</center> <hr></h1>
     <table>
-        <tr><b>ผู้ใช้ :</b><?php echo $_SESSION['username']; ?><br></tr>
-    <td align = "center">
-        <tr><b>หมวดหมู่</b> : 
-            <select name="list" >
-            <option value="all"> --ทั้งหมด--</option>
-            <option value="all"> เรื่องทั่วไป</option>
-            <option value="all"> เรื่องเรียน</option>
-            </select><br></tr>
+        <tr><td><b>ผู้ใช้ :</b><?php echo $_SESSION['username']; ?><br></td></tr>
 
-        <tr><b>หัวข้อ :</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"><br></tr>
+        <tr>
+            <td><b>หมวดหมู่</b> :</td> 
+            <td>
+                <select name="list" >
+                <option value="all"> --ทั้งหมด--</option>
+                <option value="all"> เรื่องทั่วไป</option>
+                <option value="all"> เรื่องเรียน</option></select><br>
+            </td>
+        </tr>
 
-        <tr><b>เนื้อหา :</b> &nbsp;&nbsp;&nbsp;&nbsp;<textarea name="" id="" cols="20" rows="2"></textarea><br></tr>
+        <tr>
+            <td><b>หัวข้อ :</td>
+            <td></b><input type="text"></td>
+        </tr>
 
-        <td><tr> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="บันทึกข้แความ"></tr></td>
-    </td>
+        <tr>
+            <td><b>เนื้อหา :</b></td>
+            <td><textarea name="" id="" cols="20" rows="2"></textarea><br></td>
+        </tr>
+
+        <tr><td><td><input type="submit" value="บันทึกข้แความ"></tr></td>
 
     </table>
 </body>

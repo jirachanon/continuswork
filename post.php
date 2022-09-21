@@ -25,7 +25,7 @@
                 <tr><td><textarea name="comment" id="" cols="30" rows="5"></textarea></td></tr>
                 <tr><td colspan="2" align="center"><input type="submit" value="ส่งความคิดเห็น"></td></tr>
             </table> <br>
-            <a href="index.html">กลับไปหน้าหลัก</a>
+            <a href="index.php">กลับไปหน้าหลัก</a>
         </div>
 
 </body>

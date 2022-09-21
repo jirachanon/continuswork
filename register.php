@@ -25,7 +25,7 @@
                             <input type="radio" name="gender" value="f">
                                 อื่นๆ:<br></td></tr>
         <tr><td>อีเมล:</td> <td><input type="text" name="Password" size="40"></td></tr>
-        <tr><td colspan="2" align="center"><input type="submit" value="สมัครสมาชิก"></td></tr>
+        <tr><td colspan="2" align="center"><input type="submit" value="สมัครสมาชิก" style="color=lightgreen;"></td></tr>
     </table> <br>
     <a href="index.php" target="_blank"> กลับไปหน้าหลัก </a></center><br>
 </body>
