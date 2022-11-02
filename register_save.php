@@ -22,6 +22,6 @@ use LDAP\Result;
     }
 
     $conn = null;
-    header('loation:register.php');
+    header('location:register.php');
     die();
 ?>

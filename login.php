@@ -17,6 +17,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Login</title>
+    <script>
+        function show_hidePassword(){
+            let pwd = document.getElementById("password");
+            let show = document.getElementById("showEye");
+            let hide = document.getElementById("hideEye");
+            hide.classList.remove("d-none");
+            if(pwd.type==="password"){
+                pwd.type = "text";
+                show.style.display = "none";
+                hide.style.display = "block";
+            }else{
+                pwd.type = "password";
+                show.style.display = "block";
+                hide.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -42,8 +59,14 @@
                             <input type="text" name="login" class="form-control">
                         </div>
                         <div class="form-group mb-3">
-                            <label class="form-label">Password:</label>    
-                            <input type="password" name="pwd" class="form-control">
+                            <label class="form-label">Password:</label>
+                            <div class="input-group">    
+                                <input type="password" name="pwd" class="form-control" id="password">
+                                <span class="input-group-text" onclick="show_hidePassword();">
+                                    <i class="bi bi-eye-fill" id="showEye"></i>
+                                    <i class="bi bi-eye-slash-fill d-none" id="hideEye"></i>
+                                </span>
+                            </div>
                         </div>
                         <center><button type="submit" class="btn btn-secondary btn-sm">Login</button></center>
 
